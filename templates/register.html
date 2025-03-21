@@ -1,0 +1,57 @@
+<!-- register.html - Diseño mejorado -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        .register-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e9ecef;
+        }
+        .register-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .register-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .register-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Crear Cuenta</h2>
+            <form action="/register" method="POST">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="password" name="clave" placeholder="Contraseña" required>
+                <input type="password" name="confirmar_clave" placeholder="Confirmar Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p><a href="/">¿Ya tienes cuenta? Inicia sesión</a></p>
+        </div>
+    </div>
+</body>
+</html>
