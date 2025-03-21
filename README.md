@@ -1,1 +1,1 @@
-tenes q aadir su venv y hacer las descargas correspondientes 
+tenes q añadir su venv y hacer las descargas correspondientes 
